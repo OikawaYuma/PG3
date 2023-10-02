@@ -34,6 +34,6 @@ int main() {
 
 	char cX[] = "kamata";
 	char cY[] = "kougakuin";
-	printf("%c\n", Min(cX, cY));
+	Min(cX, cY);
 	return 0;
 }
