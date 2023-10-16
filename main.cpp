@@ -6,7 +6,7 @@ int Min(int a, int b) {
 		return 0;
 	}
 	else {
-		printf("%d\n,", b);
+		printf("%d\,", b);
 		return 0;
 	}
 }
