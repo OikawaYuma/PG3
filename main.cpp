@@ -17,7 +17,7 @@ int RandNum() {
 	return b;
 }
 
-void SelectNum() {
+void SelectNum(int num) {
 
 }
 
