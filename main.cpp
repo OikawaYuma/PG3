@@ -14,7 +14,7 @@ Type Min(Type a, Type b) {
 
 
  char Min(char *a, char *b) {
-	 printf("数字は入力できません");
+	 printf("数字以外は入力できません");
 	return 0;
 }
 
