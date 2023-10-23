@@ -2,7 +2,7 @@
 int num = 1;
 int maney = 100;
 int sum = 0;
-int Recursive(int n) {
+int CalcSalary(int n) {
 	sum += maney;
 	printf("%d時間目 , 一般的賃金 : %d , 変動時給 : %d , 合計賃金 : %d\n", num, num * 1072, maney, sum);
 	if (sum >= 1072*num) {
@@ -15,11 +15,11 @@ int Recursive(int n) {
 	
 	num++;
 	maney = n * 2 - 50;
-	return Recursive(maney);
+	return CalcSalary(maney);
 }
 
 
 int main() {
-	Recursive(maney);
+	CalcSalary(maney);
 	return 0;
 }
