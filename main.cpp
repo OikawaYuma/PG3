@@ -29,8 +29,8 @@ int main() {
 	float fy = 56.4f;
 	printf("%f\n", Min<float>(fx, fy));
 	
-	double dx = 1033.743f;
-	double dy = 526.456f;
+	double dx = 1033.743;
+	double dy = 526.456;
 	printf("%lf\n", Min<float>(dx, dy));
 
 	char cx[] = "kamata";
