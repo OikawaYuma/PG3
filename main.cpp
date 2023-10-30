@@ -2,6 +2,8 @@
 #include<stdio.h>
 #include<time.h>
 #include <math.h>
+
+typedef void (*PFunc)(int*);
 void TimeCount() {
 	int countTime = 180;
 	while (countTime <= 0) {
@@ -17,8 +19,8 @@ int RandNum() {
 	return b;
 }
 
-void SelectNum(int num) {
-
+int SelectNum(int num) {
+	return 0;
 }
 
 int main() {
@@ -26,8 +28,10 @@ int main() {
 	int (*pfunc)();
 	pfunc = RandNum;
 	int num = pfunc();
+
+	pfunc = SelectNum;
 	int a = 0;
-	scanf_s("%d",a);
+	scanf_s("%d",&a);
 	
 	return 0;
 }
