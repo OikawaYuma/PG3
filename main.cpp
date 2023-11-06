@@ -23,6 +23,10 @@ int SelectNum(int num) {
 	return 0;
 }
 
+void SetTimeOut(PFunc p,int second) {
+
+}
+
 int main() {
 	
 	int (*pfunc)();
