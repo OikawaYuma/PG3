@@ -43,11 +43,12 @@ void Answer(int randNum) {
 }
 
 int main() {
-
+	//サイコロを転がす処理
 	int (*pfunc)();
 	pfunc = RandNum;
 	int num = pfunc();
 
+	// 奇数か偶数か選択し、正否を返す
 	PFunc pAnswer;
 	pAnswer = Answer;
 
