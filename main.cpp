@@ -4,7 +4,7 @@
 #include <math.h>
 #include <Windows.h>
 #include <functional>
-
+//サイコロを回す
 auto num = [](int i) {
 	unsigned int currentTime = time(nullptr);
 	srand(currentTime);
@@ -12,15 +12,8 @@ auto num = [](int i) {
 	return i;
 
 };
-
-//void SetTimeOutAnswer( PFunc Answer,int randNum) {
-//	
-//	Answer(randNum);
-//
-//}
-
-
-auto Answer = [](int randNum) {
+// 渡された数字が偶数か、奇数を判断する
+auto SetTimeOutAnswer = [](int randNum) {
 	//サイコロの目を奇数か、偶数かを判断する
 	int judgeNum = randNum % 2;
 	//プレイヤーの予想を代入する
@@ -34,20 +27,9 @@ auto Answer = [](int randNum) {
 };
 
 int main() {
-	//サイコロを転がす処理
 
-	num(1);
+	SetTimeOutAnswer(num(2));
 
-	printf("%d", num);
-
-	// 奇数か偶数か選択し、正否を返す
-
-	Answer(num(2));
-
-	/*SetTimeOutAnswer( Answer,num);*/
-	
-	// サイコロの目の数を確認
-	printf("\n%d", num);
 
 	return 0;
 }
