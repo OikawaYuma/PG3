@@ -24,6 +24,8 @@ auto SetTimeOutAnswer = [](int randNum) {
 		printf("正解");
 	}
 	else { printf("不正解"); };
+
+	printf("\n%d", randNum);
 };
 
 int main() {
