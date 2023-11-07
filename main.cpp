@@ -5,7 +5,7 @@
 #include <Windows.h>
 #include <functional>
 //サイコロを回す
-auto num = [](int i) {
+auto RandNum = [](int i) {
 	unsigned int currentTime = time(nullptr);
 	srand(currentTime);
 	i = rand() % 6 + 1;
@@ -28,7 +28,7 @@ auto SetTimeOutAnswer = [](int randNum) {
 
 int main() {
 
-	SetTimeOutAnswer(num(2));
+	SetTimeOutAnswer(RandNum(2));
 
 
 	return 0;
