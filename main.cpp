@@ -2,28 +2,30 @@
 #include<stdio.h>
 #include<time.h>
 #include <math.h>
-#include "Soldier.h"
-#include "Infantry.h"
-#include "Cavalry.h"
+#include "Ractangle.h"
+#include "Circle.h"
+#include "IShape.h"
+
 
 int main() {
-	Soldier* soldier[5];
+	IShape* shape[5];
 	for (int i = 0; i < 5; i++) {
 		if (i < 3) {
-			soldier[i] = new Infantry;
+			shape[i] = new Circle;
 		}
-		else { soldier[i] = new Cavalry; }
+		else { shape[i] = new Rectangle; }
 	}
 
 	for(int i = 0; i < 5; i++) {
 		
-			soldier[i]->Attack();
+		shape[i]->size();
+		shape[i]->draw();
 		
 	}
 
 	for (int i = 0; i < 5; i++) {
 
-		delete soldier[i];
+		delete shape[i];
 
 	}
 	return 0;
