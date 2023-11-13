@@ -10,5 +10,5 @@ Infantry::~Infantry() {
 }
 
 void Infantry::Attack() {
-	printf("•ºm‚ÌUŒ‚!!\n");
+	printf("å…µå£«ã®æ”»æ’ƒ!!\n");
 }

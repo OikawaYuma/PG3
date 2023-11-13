@@ -4,11 +4,11 @@ Cavalry::Cavalry() {
 	
 }
 Cavalry::~Cavalry() {
-	printf("”n‚©‚ç—‚Æ‚³‚ê‚½");
+	printf("é¦¬ã‹ã‚‰è½ã¨ã•ã‚ŒãŸ");
 }
 
 void Cavalry::Attack() {
-	printf("”n‚Ì“ËiII\n");
-	printf("•ºm‚ÌUŒ‚II\n");
+	printf("é¦¬ã®çªé€²ï¼ï¼\n");
+	printf("å…µå£«ã®æ”»æ’ƒï¼ï¼\n");
 
 }
