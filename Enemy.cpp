@@ -4,28 +4,28 @@
 
 Enemy::Enemy() {};
 Enemy::~Enemy() {};
-// static‚Å‚¹‚ñ‚Ó‚¥‚ñ‚µ‚½ƒƒ“ƒoŠÖ”ƒ|ƒCƒ“ƒ^ƒe[ƒuƒ‹‚ÌÀ‘Ô
+// staticã§ã›ã‚“ãµã‡ã‚“ã—ãŸãƒ¡ãƒ³ãƒé–¢æ•°ãƒã‚¤ãƒ³ã‚¿ãƒ†ãƒ¼ãƒ–ãƒ«ã®å®Ÿæ…‹
 void (Enemy::* Enemy::spAttackTable[])() = {
-	&Enemy::Approach,  // —v‘f”Ô†0
-	&Enemy::Shooting,  // —v‘f”Ô†1
-	&Enemy::Withdrawal // —v‘f”Ô†2
+	&Enemy::Approach,  // è¦ç´ ç•ªå·0
+	&Enemy::Shooting,  // è¦ç´ ç•ªå·1
+	&Enemy::Withdrawal // è¦ç´ ç•ªå·2
 };
 void Enemy::Attack(int phase) {
 	(this->*spAttackTable[phase])();
 }
 
 void Enemy::Approach() {
-	printf("“G‚ÌÚ‹ßUŒ‚\n");
+	printf("æ•µã®æ¥è¿‘æ”»æ’ƒ\n");
 
 	
 }
 
 void Enemy::Shooting() {
-	printf("“G‚ÌËŒ‚UŒ‚\n");
+	printf("æ•µã®å°„æ’ƒæ”»æ’ƒ\n");
 
 }
 
 void Enemy::Withdrawal() {
-	printf("“G‚Í—£’E‚µ‚½\n");
+	printf("æ•µã¯é›¢è„±ã—ãŸ\n");
 
 }

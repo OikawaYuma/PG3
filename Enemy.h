@@ -5,12 +5,12 @@ public:
 	Enemy();
 	~Enemy();
 	void Attack(int phase);
-	// 自作メンバ関数
+	// 閾ｪ菴懊Γ繝ｳ繝宣未謨ｰ
 	void Approach();
 	void Shooting();
 	void Withdrawal();
 private:
-	// メンバ関数ポインタのテーブル
+	// 繝｡繝ｳ繝宣未謨ｰ繝昴う繝ｳ繧ｿ縺ｮ繝�繝ｼ繝悶Ν
 	static void (Enemy::* spAttackTable[])();
 };
 
