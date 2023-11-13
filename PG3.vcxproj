@@ -130,7 +130,6 @@
     <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="Circle.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="IShape.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Ractangle.h" />

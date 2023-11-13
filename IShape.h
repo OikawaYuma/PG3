@@ -10,8 +10,6 @@ struct Vector2 {
 class IShape
 {
 public:
-	IShape();
-	~IShape();
 	virtual void size() = 0;
 	virtual void draw() = 0;
 private:
