@@ -21,7 +21,7 @@ int main() {
 
 
 	 float AnswerFF = Number<float,float>::Min(FloatNum->number1, FloatNum->number2);
-	 double AnswerFD = Number<float, float>::Min(FloatNum->number1, DoubleNum->number2);
+	 double AnswerFD = Number<float, double>::Min(FloatNum->number1, DoubleNum->number2);
 
 	 double AnswerDD = Number<double,double>::Min(DoubleNum->number1, DoubleNum->number2);
 
