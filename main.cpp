@@ -5,22 +5,34 @@
 #include <Windows.h>
 #include <functional>
 //サイコロを回す
-auto RandNum = [](int i) {
+auto RandNum = []() {
+	int randNum;
 	unsigned int currentTime = time(nullptr);
 	srand(currentTime);
-	i = rand() % 6 + 1;
-	return i;
+	randNum = rand() % 6 + 1;
+	return randNum;
 
 };
+
+auto SelectNum = []() {
+	int selectNum;
+	printf("サイコロの目が偶数なら0、奇数ならそれ以外の数字を入力してください : ");
+	scanf_s("%d", &selectNum);
+	return selectNum;
+};
+
 // 渡された数字が偶数か、奇数を判断する
-std::function<void(int)> SetTimeOutAnswer = [](int randNum) {
+std::function<void(int)> SetTimeOut = [](int setTime) {
+
+	Sleep(setTime * 1000);
+};
+	
+std::function<void(int,int,int)> Answer = [](int time, int randNum,int selectNum ) {
 	//サイコロの目を奇数か、偶数かを判断する
 	int judgeNum = randNum % 2;
 	//プレイヤーの予想を代入する
-	int answerNum;
-	printf("サイコロの目が偶数なら0、奇数ならそれ以外の数字を入力してください : ");
-	scanf_s("%d",&answerNum);
-	Sleep(3 * 1000);
+	int answerNum =selectNum;
+	SetTimeOut(time);
 	if ((judgeNum == 0 && answerNum == 0) || (judgeNum == 1 && answerNum != 0)) {
 		printf("\n正解");
 	}
@@ -31,10 +43,11 @@ std::function<void(int)> SetTimeOutAnswer = [](int randNum) {
 	printf("\nサイコロの目　%d", randNum);
 };
 
+
+
 int main() {
 
-	SetTimeOutAnswer(RandNum(2));
-
+	Answer(3,RandNum(),SelectNum());
 
 	return 0;
 }
