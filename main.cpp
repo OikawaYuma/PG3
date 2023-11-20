@@ -21,7 +21,6 @@ auto RandNum = []() {
 
 auto SelectNum = []() {
 	int selectNum;
-	printf("サイコロの目が偶数なら0、奇数ならそれ以外の数字を入力してください : ");
 	scanf_s("%d", &selectNum);
 	return selectNum;
 };
@@ -53,7 +52,7 @@ void Answer ( int randNum, int selectNum){
 
 
 int main() {
-	
+	printf("サイコロの目が偶数なら0、奇数ならそれ以外の数字を入力してください : ");
 	PFunc answer = Answer;
 	SetTimeOut(answer, 3);
 
