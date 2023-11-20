@@ -1,4 +1,4 @@
-﻿#include<stdlib.h>
+#include<stdlib.h>
 #include<stdio.h>
 #include<time.h>
 #include <math.h>
@@ -32,7 +32,9 @@ std::function<void(int,int,int)> Answer = [](int time, int randNum,int selectNum
 	int judgeNum = randNum % 2;
 	//プレイヤーの予想を代入する
 	int answerNum =selectNum;
+	// 引数の分の秒数をつ
 	SetTimeOut(time);
+	//
 	if ((judgeNum == 0 && answerNum == 0) || (judgeNum == 1 && answerNum != 0)) {
 		printf("\n正解");
 	}
