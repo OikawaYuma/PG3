@@ -33,29 +33,19 @@ void SetTimeOut(std::function<void()> p, int setTime) {
 	p();
 };
 
-std::function<int()> Judge = []() {return 0; };
-
-std::function<void()> Answer = []() {
-	int judge = Judge();
-	printf("\n 結果　%d", judge);
-	if (judge) {
-		printf("\n正解");
-	}
-	else if (!judge) {
-		printf("\n不正解");
-	}
-};
 
 
 int main() {
-	int randNum = RandNum();
-	int selectNum = SelectNum();
-
-	auto Judge = [&]() {
+	auto Judge = [&](int RandNum, int SelectNum) {
+		int randNum = RandNum;
+		int selectNum = SelectNum;
 		//サイコロの目を奇数か、偶数かを判断する
 		int judgeNum = randNum % 2;
 		//プレイヤーの予想を代入する
 		int answerNum = selectNum;
+		// 確認
+		printf("\nプレイヤーの選んだ数字　%d", selectNum);
+		printf("\nサイコロの目　%d", randNum);
 		if ((judgeNum == 0 && answerNum == 0) || (judgeNum == 1 && answerNum != 0)) {
 
 			return 1;
@@ -66,8 +56,12 @@ int main() {
 
 	};
 
+	// 判定
+	int judge = Judge(RandNum(), SelectNum());
+
+	//　正解の関数を読み込む
 	std::function<void()> Answer = [&]() {
-		int judge = Judge();
+		
 		printf("\n 結果　%d", judge);
 		if (judge) {
 			printf("\n正解");
@@ -77,16 +71,10 @@ int main() {
 		}
 	};
 
-
-
-
 	std::function<void()>  answer = Answer;
 	SetTimeOut(answer, 3);
 
 
-	// 確認
-	printf("\nプレイヤーの選んだ数字　%d", selectNum);
-	printf("\n偶数か奇数か　%d", selectNum%2);
-	printf("\nサイコロの目　%d", randNum);
+	
 	return 0;
 }
