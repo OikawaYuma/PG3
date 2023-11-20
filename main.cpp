@@ -1,9 +1,14 @@
-#include<stdlib.h>
+﻿#include<stdlib.h>
 #include<stdio.h>
 #include<time.h>
 #include <math.h>
 #include <Windows.h>
 #include <functional>
+
+typedef  void(*PFunc)(int,int);
+
+
+
 //サイコロを回す
 auto RandNum = []() {
 	int randNum;
@@ -21,20 +26,20 @@ auto SelectNum = []() {
 	return selectNum;
 };
 
-// 渡された数字が偶数か、奇数を判断する
-std::function<void(int)> SetTimeOut = [](int setTime) {
 
+// 渡された数字が偶数か、奇数を判断する
+void SetTimeOut(PFunc answer,int setTime) {
 	Sleep(setTime * 1000);
+	answer(RandNum(),SelectNum());
 };
 	
-std::function<void(int,int,int)> Answer = [](int time, int randNum,int selectNum ) {
+void Answer ( int randNum, int selectNum){
+
 	//サイコロの目を奇数か、偶数かを判断する
 	int judgeNum = randNum % 2;
 	//プレイヤーの予想を代入する
 	int answerNum =selectNum;
-	// 引数の分の秒数をつ
-	SetTimeOut(time);
-	//
+
 	if ((judgeNum == 0 && answerNum == 0) || (judgeNum == 1 && answerNum != 0)) {
 		printf("\n正解");
 	}
@@ -48,8 +53,9 @@ std::function<void(int,int,int)> Answer = [](int time, int randNum,int selectNum
 
 
 int main() {
-
-	Answer(3,RandNum(),SelectNum());
+	
+	PFunc answer = Answer;
+	SetTimeOut(answer, 3);
 
 	return 0;
 }
