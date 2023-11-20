@@ -1,0 +1,23 @@
+'PG3.exe' (Win32): 'C:\LE2B_second\PG3\x64\Debug\PG3.exe' が読み込まれました。シンボルが読み込まれました。
+'PG3.exe' (Win32): 'C:\Windows\System32\ntdll.dll' が読み込まれました。シンボルが読み込まれました。
+'PG3.exe' (Win32): 'C:\Windows\System32\kernel32.dll' が読み込まれました。シンボルが読み込まれました。
+'PG3.exe' (Win32): 'C:\Windows\System32\KernelBase.dll' が読み込まれました。シンボルが読み込まれました。
+'PG3.exe' (Win32): 'C:\Windows\System32\msvcp140d.dll' が読み込まれました。シンボルが読み込まれました。
+'PG3.exe' (Win32): 'C:\Windows\System32\ole32.dll' が読み込まれました。シンボルが読み込まれました。
+'PG3.exe' (Win32): 'C:\Windows\System32\msvcp_win.dll' が読み込まれました。シンボルが読み込まれました。
+'PG3.exe' (Win32): 'C:\Windows\System32\ucrtbase.dll' が読み込まれました。シンボルが読み込まれました。
+'PG3.exe' (Win32): 'C:\Windows\System32\gdi32.dll' が読み込まれました。シンボルが読み込まれました。
+'PG3.exe' (Win32): 'C:\Windows\System32\win32u.dll' が読み込まれました。シンボルが読み込まれました。
+'PG3.exe' (Win32): 'C:\Windows\System32\gdi32full.dll' が読み込まれました。シンボルが読み込まれました。
+'PG3.exe' (Win32): 'C:\Windows\System32\user32.dll' が読み込まれました。シンボルが読み込まれました。
+'PG3.exe' (Win32): 'C:\Windows\System32\combase.dll' が読み込まれました。シンボルが読み込まれました。
+'PG3.exe' (Win32): 'C:\Windows\System32\rpcrt4.dll' が読み込まれました。シンボルが読み込まれました。
+'PG3.exe' (Win32): 'C:\Windows\System32\vcruntime140_1d.dll' が読み込まれました。シンボルが読み込まれました。
+'PG3.exe' (Win32): 'C:\Windows\System32\vcruntime140d.dll' が読み込まれました。シンボルが読み込まれました。
+'PG3.exe' (Win32): 'C:\Windows\System32\ucrtbased.dll' が読み込まれました。シンボルが読み込まれました。
+'PG3.exe' (Win32): 'C:\Windows\System32\imm32.dll' が読み込まれました。シンボルが読み込まれました。
+スレッド 0xa7b0 はコード 0 (0x0) で終了しました。
+スレッド 0x67a4 はコード 3221225786 (0xc000013a) で終了しました。
+スレッド 0x9100 はコード 3221225786 (0xc000013a) で終了しました。
+スレッド 0x85ec はコード 3221225786 (0xc000013a) で終了しました。
+プログラム '[3776] PG3.exe' はコード 3221225786 (0xc000013a) で終了しました。
