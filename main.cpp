@@ -2,6 +2,7 @@
 #include <thread>
 
 static int num = 1;
+
 void PrintThread() {
 	printf("thread %d\n", num);
 	num++;
