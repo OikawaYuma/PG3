@@ -5,7 +5,7 @@
 #include <Windows.h>
 #include <functional>
 
-typedef  std::function<void()>(*PFunc)();
+//typedef  std::function<void()>(*PFunc)();
 
 
 
