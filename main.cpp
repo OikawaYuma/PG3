@@ -24,7 +24,7 @@ int main() {
 	coppyChar = testChar;
 	end = std::chrono::system_clock::now();
 	double elapsed = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-	std::cout << elapsed << std::endl;
+	std::cout <<"コピーにかかる時間　" << elapsed << std::endl;
 
 	// 移動用
 	std::chrono::system_clock::time_point start2, end2;
@@ -33,7 +33,7 @@ int main() {
 	moveChar = std::move(testChar);
 	end = std::chrono::system_clock::now();
 	double elapsed2 = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-	std::cout << elapsed2<< std::endl;
+	std::cout<<"移動にかかる時間　　" << elapsed2 << std::endl;
 
 	return 0;
 }
