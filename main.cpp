@@ -19,7 +19,7 @@ int main() {
 
 
 
-	list<string> yamanoteLine{ "a"};
+	list<char> yamanoteLine = { ""};
 
 
 	for (list<string>::iterator it_f = yamanoteLine.begin(); it_f != yamanoteLine.end(); it_f++) {
