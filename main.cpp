@@ -19,10 +19,10 @@ int main() {
 
 
 
-	list<char> yamanoteLine{ };
+	list<string> yamanoteLine{ "a"};
 
 
-	for (list<char>::iterator it_f = yamanoteLine.begin(); it_f != yamanoteLine.end(); it_f++) {
+	for (list<string>::iterator it_f = yamanoteLine.begin(); it_f != yamanoteLine.end(); it_f++) {
 
 		cout << *it_f << endl;
 	}
